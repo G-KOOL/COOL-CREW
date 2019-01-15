@@ -1,0 +1,29 @@
+1- sudo apt update 
+2- sudo apt install apt-transport-https ca-certificates curl software-properties-common
+3-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+4- sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+5-  sudo apt update
+6-  apt-cache policy docker-ce
+7- sudo apt install docker-ce
+8-  sudo systemctl status docker
+9- docker --version
+10- docker ps
+11- sudo docker ps
+12-  sudo usermod -aG docker ${USER}
+13- su - ${USER}
+14-  id -nG
+15- docker
+16- docker docker-subcommand --help
+17-  docker info
+18- docker run hello-world
+19-  docker search ubuntu
+20- docker pull ubuntu
+21- docker images
+22-  docker run -it ubuntu
+22-  echo  ${USER}
+23- docker ps -a
+24- sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+25-  curl -L https://github.com/docker/compose/releases/download/1.24.0-rc1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+26-  sudo chmod +x /usr/local/bin/docker-compose
+27- sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
